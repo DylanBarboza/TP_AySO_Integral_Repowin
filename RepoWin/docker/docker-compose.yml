@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    web:
+        image: lbricchi/tp-div_318_grupo_repowin:latest
+        ports:
+            - 8080:80
+        volumes:
+            - /scripts:/scripts
+            - /usr/share/nginx/html/file:/web/file
